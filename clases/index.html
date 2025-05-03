@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clases de Computación</title>
+  <!-- Poppins Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0086e8',
+            accent: '#21abfb',
+            light: '#f1f1f1',
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-light text-gray-800 font-poppins">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow p-4 fixed w-full z-10">
+    <nav class="max-w-6xl mx-auto flex justify-center space-x-6">
+      <a href="#home" class="text-primary hover:underline">Inicio</a>
+      <a href="#clases" class="text-primary hover:underline">Clases</a>
+      <a href="#temario" class="text-primary hover:underline">Temario</a>
+      <a href="#contacto" class="text-primary hover:underline">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="flex flex-col items-center justify-center min-h-screen bg-primary text-white text-center p-8 pt-24">
+    <h1 class="text-5xl font-bold mb-4">Bienvenidos a Clases de Computación 💻</h1>
+    <p class="text-xl mb-6">Domina Office, programación y redes desde tu móvil</p>
+    <img src="images/hero.jpg" alt="Clases de Computación" class="w-full max-w-lg rounded-lg shadow-lg" />
+  </section>
+
+  <!-- Clases -->
+  <section id="clases" class="py-16 px-8 bg-light pt-32">
+    <h2 class="text-3xl font-bold text-center mb-8 text-primary">¿Qué ofrecemos?</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <div class="border rounded-2xl shadow p-6 bg-white">
+        <div class="text-4xl mb-4">📄</div>
+        <h3 class="text-xl font-semibold mb-2">Ofimática Móvil</h3>
+        <p>Aprende a usar Word y Excel desde tu smartphone.</p>
+      </div>
+
+      <div class="border rounded-2xl shadow p-6 bg-white">
+        <div class="text-4xl mb-4">💻</div>
+        <h3 class="text-xl font-semibold mb-2">Fundamentos de Programación</h3>
+        <p>Introducción a Python y JavaScript paso a paso.</p>
+      </div>
+
+      <div class="border rounded-2xl shadow p-6 bg-white">
+        <div class="text-4xl mb-4">🌐</div>
+        <h3 class="text-xl font-semibold mb-2">Redes y Seguridad</h3>
+        <p>Conceptos básicos de redes, ruteo y seguridad informática.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Temario -->
+  <section id="temario" class="py-16 px-8 text-center">
+    <h2 class="text-3xl font-bold mb-4 text-primary">Temario del Curso</h2>
+    <ul class="list-disc list-inside max-w-xl mx-auto text-left space-y-2">
+      <li>Fundamentos de Word y Excel</li>
+      <li>Automatización con macros básicas</li>
+      <li>Programación en Python y JavaScript</li>
+      <li>Uso de Git y GitHub</li>
+      <li>Administración de redes LAN/WAN y seguridad</li>
+      <li>Configuración de Zoom para clases online</li>
+    </ul>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 px-8 bg-light">
+    <h2 class="text-3xl font-bold text-center mb-6 text-primary">Contacto</h2>
+    <form action="#" class="max-w-md mx-auto space-y-4">
+      <input type="text" name="name" placeholder="Nombre" class="w-full p-3 border rounded-lg" />
+      <input type="email" name="email" placeholder="Email" class="w-full p-3 border rounded-lg" />
+      <textarea name="message" placeholder="Mensaje" class="w-full p-3 border rounded-lg"></textarea>
+      <button type="submit" class="w-full py-3 rounded-lg bg-accent text-white font-semibold hover:opacity-90">Enviar Mensaje</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center p-4">
+    <p class="text-sm text-gray-600">&copy; 2025 Clases de Computación. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
